@@ -27,7 +27,9 @@ const Index = () => {
         <Card className="p-6 bg-card border-border col-span-1 row-span-1 flex flex-col">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
-              <div className="w-4 h-4 bg-primary rounded" />
+              <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z" />
+              </svg>
             </div>
             <div>
               <p className="text-xs text-muted-foreground">My Stacks</p>
@@ -60,8 +62,8 @@ const Index = () => {
               <span className="text-xs font-medium">Python</span>
             </div>
             <div className="bg-secondary rounded-lg p-2 flex items-center justify-center gap-1">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" className="w-4 h-4" alt="AWS" />
-              <span className="text-xs font-medium">AWS</span>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" className="w-4 h-4" alt="AWS" />
+              <span className="text-xs font-medium">AWS Cloud</span>
             </div>
             <div className="bg-secondary rounded-lg p-2 flex items-center justify-center gap-1">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" className="w-4 h-4" alt="Git" />
@@ -86,6 +88,10 @@ const Index = () => {
             <div className="bg-secondary rounded-lg p-2 flex items-center justify-center gap-1">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/security/security-original.svg" className="w-4 h-4" alt="Cybersecurity" />
               <span className="text-xs font-medium">Cybersecurity</span>
+            </div>
+            <div className="bg-secondary rounded-lg p-2 flex items-center justify-center gap-1">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" className="w-4 h-4" alt="Kubernetes" />
+              <span className="text-xs font-medium">Kubernetes</span>
             </div>
             <div className="bg-secondary rounded-lg p-2 flex items-center justify-center gap-1">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" className="w-4 h-4" alt="DBMS" />
@@ -381,7 +387,18 @@ const Index = () => {
                   alt="MERN Authentication" 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
+                  <div className="flex justify-end">
+                    <a 
+                      href="https://mern-authentication-project-7tr0.onrender.com" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="px-3 py-1 bg-white/90 text-black text-xs rounded-full font-medium hover:bg-white transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Live Demo
+                    </a>
+                  </div>
                   <div className="text-white">
                     <h4 className="font-medium">MERN Advanced Authentication</h4>
                     <p className="text-xs text-gray-300">MERN, Mailtrap, JWT, TailwindCSS</p>
@@ -390,11 +407,28 @@ const Index = () => {
               </div>
               <div className="p-4">
                 <div className="flex flex-wrap gap-1 mb-2">
-                  <span className="px-2 py-1 text-xs rounded-full bg-blue-100 text-blue-800">MongoDB</span>
-                  <span className="px-2 py-1 text-xs rounded-full bg-green-100 text-green-800">Express</span>
-                  <span className="px-2 py-1 text-xs rounded-full bg-yellow-100 text-yellow-800">React</span>
-                  <span className="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-800">Node.js</span>
-                  <span className="px-2 py-1 text-xs rounded-full bg-purple-100 text-purple-800">JWT</span>
+                  <span className="px-2 py-1 text-xs rounded-full bg-blue-100 text-blue-800 flex items-center gap-1">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" className="w-3 h-3" alt="MongoDB" />
+                    <span>MongoDB</span>
+                  </span>
+                  <span className="px-2 py-1 text-xs rounded-full bg-green-100 text-green-800 flex items-center gap-1">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" className="w-3 h-3" alt="Express" />
+                    <span>Express</span>
+                  </span>
+                  <span className="px-2 py-1 text-xs rounded-full bg-yellow-100 text-yellow-800 flex items-center gap-1">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-3 h-3" alt="React" />
+                    <span>React</span>
+                  </span>
+                  <span className="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-800 flex items-center gap-1">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="w-3 h-3" alt="Node.js" />
+                    <span>Node.js</span>
+                  </span>
+                  <span className="px-2 py-1 text-xs rounded-full bg-purple-100 text-purple-800 flex items-center gap-1">
+                    <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M10.2 0v6.456L12 8.928l1.8-2.472V0zm3.6 6.456v3.072l2.904-.96L20.52 3.36l-2.88-2.136zm2.904 2.112l-1.68 2.88h2.688l1.92-2.88zm-1.68 3.432L12 12.144 8.976 12l-3.6 2.88H1.2L12 4.728l2.28 3.128 2.632-1.92z"/>
+                    </svg>
+                    <span>JWT</span>
+                  </span>
                 </div>
                 <p className="text-sm text-muted-foreground line-clamp-3 mb-3">
                   Developed a secure authentication system using the MERN stack (MongoDB, Express.js, React.js, and Node.js), featuring email OTP verification as an added layer of security. The system includes user registration, email verification, login and logout functionality, ensuring secure access by verifying user identity through email OTPs.
