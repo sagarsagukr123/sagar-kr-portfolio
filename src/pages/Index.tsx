@@ -33,48 +33,58 @@ const Index = () => {
               <h3 className="text-sm font-semibold">Tech Arsenal</h3>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-3 flex-1">
-            <div className="bg-secondary rounded-lg p-3 flex items-center justify-center">
-              <span className="text-xs font-medium">Webflow</span>
+          <div className="grid grid-cols-2 gap-2 flex-1">
+            <div className="bg-secondary rounded-lg p-2 flex items-center justify-center">
+              <span className="text-xs font-medium">React.js</span>
             </div>
-            <div className="bg-secondary rounded-lg p-3 flex items-center justify-center">
-              <span className="text-xs font-medium">Figma</span>
+            <div className="bg-secondary rounded-lg p-2 flex items-center justify-center">
+              <span className="text-xs font-medium">Node.js</span>
             </div>
-            <div className="bg-secondary rounded-lg p-3 flex items-center justify-center">
-              <span className="text-xs font-medium">Framer</span>
+            <div className="bg-secondary rounded-lg p-2 flex items-center justify-center">
+              <span className="text-xs font-medium">MongoDB</span>
             </div>
-            <div className="bg-secondary rounded-lg p-3 flex items-center justify-center">
-              <span className="text-xs font-medium">Adobe XD</span>
+            <div className="bg-secondary rounded-lg p-2 flex items-center justify-center">
+              <span className="text-xs font-medium">Java</span>
+            </div>
+            <div className="bg-secondary rounded-lg p-2 flex items-center justify-center">
+              <span className="text-xs font-medium">Python</span>
+            </div>
+            <div className="bg-secondary rounded-lg p-2 flex items-center justify-center">
+              <span className="text-xs font-medium">AWS</span>
+            </div>
+            <div className="bg-secondary rounded-lg p-2 flex items-center justify-center">
+              <span className="text-xs font-medium">Docker</span>
+            </div>
+            <div className="bg-secondary rounded-lg p-2 flex items-center justify-center">
+              <span className="text-xs font-medium">Git/GitHub</span>
             </div>
           </div>
         </Card>
 
         {/* Stats Cards */}
         <Card className="p-6 bg-card border-border flex flex-col items-center justify-center">
-          <div className="text-5xl font-bold mb-2">01+</div>
+          <div className="text-5xl font-bold mb-2">10+</div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Briefcase className="w-4 h-4" />
-            <span>Projects</span>
+            <span>Projects Completed</span>
           </div>
         </Card>
 
         <Card className="p-6 bg-card border-border flex flex-col items-center justify-center">
-          <div className="text-5xl font-bold mb-2">01+</div>
+          <div className="text-5xl font-bold mb-2">2</div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M10 2a8 8 0 100 16 8 8 0 000-16zM8 10a2 2 0 114 0 2 2 0 01-4 0z" />
-            </svg>
-            <span>Happy Clients</span>
+            <Clock className="w-4 h-4" />
+            <span>Months Experience</span>
           </div>
         </Card>
 
         <Card className="p-6 bg-card border-border flex flex-col items-center justify-center">
-          <div className="text-5xl font-bold mb-2">01+</div>
+          <div className="text-5xl font-bold mb-2">0</div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
             </svg>
-            <span>Year Expertise</span>
+            <span>Collaborations</span>
           </div>
         </Card>
 
@@ -85,20 +95,22 @@ const Index = () => {
               <div className="w-3 h-3 rounded-full bg-success animate-pulse" />
               <span className="text-sm text-muted-foreground">Available To Work</span>
             </div>
-            <Button variant="ghost" size="sm" className="gap-2">
-              <span className="text-sm">Resume</span>
-              <Download className="w-4 h-4" />
+            <Button variant="ghost" size="sm" className="gap-2" asChild>
+              <a href="https://drive.google.com/file/d/1fbbgVux43B32qjOXMwjByk3szR_ECAOn/view" target="_blank" rel="noopener noreferrer">
+                <span className="text-sm">Resume</span>
+                <Download className="w-4 h-4" />
+              </a>
             </Button>
           </div>
 
           <div className="flex items-center gap-4 mb-6">
             <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent overflow-hidden">
-              <div className="w-full h-full bg-secondary/50" />
+              <img src="/sagar-profile.jpg" alt="Sagar K R" className="w-full h-full object-cover" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold mb-1">Sanjay Billa</h1>
+              <h1 className="text-2xl font-bold mb-1">Sagar K R</h1>
               <p className="text-muted-foreground">
-                I'm a <span className="text-primary font-medium">Product Designer</span>
+                I'm a <span className="text-primary font-medium">Software Engineer | Full Stack Developer</span>
               </p>
             </div>
           </div>
@@ -106,34 +118,38 @@ const Index = () => {
           <div className="grid grid-cols-2 gap-3 mb-6">
             <div className="flex items-center gap-2 text-sm">
               <MapPin className="w-4 h-4 text-primary" />
-              <span>India</span>
+              <span>Bangalore, India</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Globe className="w-4 h-4 text-primary" />
-              <span>English & Hindi</span>
+              <span>English, Hindi & Kannada</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Briefcase className="w-4 h-4 text-primary" />
-              <span>Product Designer</span>
+              <span>Full Stack Developer</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <GraduationCap className="w-4 h-4 text-primary" />
-              <span>Mumbai University</span>
+              <span>MS Ramaiah Institute (MCA)</span>
             </div>
             <div className="flex items-center gap-2 text-sm col-span-2">
               <Clock className="w-4 h-4 text-primary" />
-              <span>IST</span>
+              <span>IST (India Standard Time)</span>
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-3 mt-auto">
-            <Button variant="default" className="gap-2 bg-primary hover:bg-primary/90">
-              <Instagram className="w-4 h-4" />
-              <span>DM me (Instagram)</span>
+            <Button variant="default" className="gap-2 bg-primary hover:bg-primary/90" asChild>
+              <a href="https://www.instagram.com/sagarsagukr123/" target="_blank" rel="noopener noreferrer">
+                <Instagram className="w-4 h-4" />
+                <span>Instagram</span>
+              </a>
             </Button>
-            <Button variant="default" className="gap-2 bg-success hover:bg-success/90">
-              <MessageCircle className="w-4 h-4" />
-              <span>WhatsApp Me</span>
+            <Button variant="default" className="gap-2 bg-success hover:bg-success/90" asChild>
+              <a href="https://wa.me/919008341046" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4" />
+                <span>WhatsApp Me</span>
+              </a>
             </Button>
           </div>
         </Card>
@@ -158,16 +174,15 @@ const Index = () => {
                 <div className="w-10 h-10 rounded-full bg-muted" />
                 <div className="flex-1">
                   <div className="flex items-center justify-between mb-1">
-                    <h4 className="font-medium text-sm">Sai Abhishek Mishra</h4>
-                    <span className="text-xs text-muted-foreground">11. Apr 2024</span>
+                    <h4 className="font-medium text-sm">Project Mentor</h4>
+                    <span className="text-xs text-muted-foreground">2024</span>
                   </div>
-                  <p className="text-xs text-muted-foreground">Mumbai, India</p>
+                  <p className="text-xs text-muted-foreground">MotionCut Internship</p>
                 </div>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Sanjay is a remarkable Product Designer, renowned for his exceptional UI skills and
-                creating Awwwards-worthy websites. I highly recommend Sanjay for any Product Designer
-                role that requires a talented and dedicated professional with a focus on UI skills.
+                Sagar demonstrated excellent technical proficiency and professionalism during his internship. 
+                His MERN and AI projects reflect deep understanding and creativity.
               </p>
             </div>
 
@@ -176,14 +191,14 @@ const Index = () => {
                 <div className="w-10 h-10 rounded-full bg-muted" />
                 <div className="flex-1">
                   <div className="flex items-center justify-between mb-1">
-                    <h4 className="font-medium text-sm">Courtney Henry</h4>
-                    <span className="text-xs text-muted-foreground">11. Feb 2024</span>
+                    <h4 className="font-medium text-sm">Training Mentor</h4>
+                    <span className="text-xs text-muted-foreground">2024</span>
                   </div>
-                  <p className="text-xs text-muted-foreground">Iceland</p>
+                  <p className="text-xs text-muted-foreground">TNSIF (Capgemini Foundation)</p>
                 </div>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Working with Jolly all about products was one is a remarkable Product Designer.
+                He consistently delivered optimized, well-structured code and was proactive in improving product performance.
               </p>
             </div>
           </div>
@@ -252,12 +267,14 @@ const Index = () => {
             <div className="aspect-square rounded-lg bg-gradient-to-br from-purple-500 to-pink-500" />
             <div className="aspect-square rounded-lg bg-gradient-to-br from-orange-500 to-red-500" />
           </div>
-          <Button variant="default" className="w-full bg-primary hover:bg-primary/90">
-            View Works
+          <Button variant="default" className="w-full bg-primary hover:bg-primary/90" asChild>
+            <a href="https://github.com/sagarsagukr123" target="_blank" rel="noopener noreferrer">
+              View Works
+            </a>
           </Button>
         </Card>
 
-        {/* Services Card */}
+        {/* Areas of Expertise Card */}
         <Card className="p-6 bg-card border-border col-span-1 row-span-1 flex flex-col">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
@@ -266,30 +283,32 @@ const Index = () => {
               </svg>
             </div>
             <div>
-              <p className="text-xs text-muted-foreground">Services</p>
-              <h3 className="text-sm font-semibold">Solutions Suite</h3>
+              <p className="text-xs text-muted-foreground">Expertise</p>
+              <h3 className="text-sm font-semibold">Areas of Expertise</h3>
             </div>
           </div>
           <div className="space-y-2 mb-4 flex-1">
             <div className="flex items-center gap-2 text-xs">
               <div className="w-2 h-2 rounded-full bg-primary" />
-              <span>App Design</span>
+              <span>Full Stack Development</span>
             </div>
             <div className="flex items-center gap-2 text-xs">
               <div className="w-2 h-2 rounded-full bg-primary" />
-              <span>No Code development</span>
+              <span>AI & ML Projects</span>
             </div>
             <div className="flex items-center gap-2 text-xs">
               <div className="w-2 h-2 rounded-full bg-primary" />
-              <span>Website App Design</span>
+              <span>Cloud & Deployment</span>
             </div>
           </div>
-          <Button variant="default" className="w-full bg-primary hover:bg-primary/90">
-            View All Services
+          <Button variant="default" className="w-full bg-primary hover:bg-primary/90" asChild>
+            <a href="https://github.com/sagarsagukr123" target="_blank" rel="noopener noreferrer">
+              View All Projects
+            </a>
           </Button>
         </Card>
 
-        {/* Clients Card */}
+        {/* Collaborations Card */}
         <Card className="p-6 bg-card border-border col-span-1 md:col-span-2 row-span-1 flex flex-col">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
@@ -298,14 +317,14 @@ const Index = () => {
               </svg>
             </div>
             <div>
-              <p className="text-xs text-muted-foreground">My Clients</p>
-              <h3 className="text-sm font-semibold">Satisfied Partners</h3>
+              <p className="text-xs text-muted-foreground">Worked With</p>
+              <h3 className="text-sm font-semibold">Collaborations</h3>
             </div>
           </div>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
-            {['TikTok', 'Spotify', 'Facebook', 'Instagram', 'Snapchat', 'Dribbble'].map((client) => (
-              <div key={client} className="flex items-center justify-center p-3 bg-secondary rounded-lg">
-                <span className="text-xs font-medium text-muted-foreground">{client}</span>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {['MotionCut', 'Capgemini Foundation', 'MS Ramaiah Institute'].map((org) => (
+              <div key={org} className="flex items-center justify-center p-3 bg-secondary rounded-lg">
+                <span className="text-xs font-medium text-muted-foreground">{org}</span>
               </div>
             ))}
           </div>
@@ -325,24 +344,22 @@ const Index = () => {
             </div>
           </div>
           <div className="space-y-2 flex-1">
-            <div className="flex items-center gap-2 p-2 bg-secondary rounded-lg">
+            <a href="https://www.instagram.com/sagarsagukr123/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 p-2 bg-secondary rounded-lg hover:bg-secondary/80 transition-colors">
               <Instagram className="w-4 h-4" />
-              <span className="text-xs">visualsbyartam</span>
-            </div>
-            <div className="flex items-center gap-2 p-2 bg-secondary rounded-lg">
+              <span className="text-xs">sagarsagukr123</span>
+            </a>
+            <a href="https://www.linkedin.com/in/sagar-k-r-146126269" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 p-2 bg-secondary rounded-lg hover:bg-secondary/80 transition-colors">
               <Linkedin className="w-4 h-4" />
-              <span className="text-xs">sanjay-billa</span>
-            </div>
-            <div className="flex items-center gap-2 p-2 bg-secondary rounded-lg">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
-              </svg>
-              <span className="text-xs">sanjaybilla</span>
-            </div>
-            <div className="flex items-center gap-2 p-2 bg-secondary rounded-lg">
+              <span className="text-xs">sagar-k-r</span>
+            </a>
+            <a href="https://github.com/sagarsagukr123" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 p-2 bg-secondary rounded-lg hover:bg-secondary/80 transition-colors">
+              <Github className="w-4 h-4" />
+              <span className="text-xs">sagarsagukr123</span>
+            </a>
+            <a href="https://x.com/KRSagar123" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 p-2 bg-secondary rounded-lg hover:bg-secondary/80 transition-colors">
               <Twitter className="w-4 h-4" />
-              <span className="text-xs">visualsbyartam</span>
-            </div>
+              <span className="text-xs">@KRSagar123</span>
+            </a>
           </div>
         </Card>
 
@@ -358,13 +375,17 @@ const Index = () => {
             Let's Make Magic Happen Together!
           </p>
           <div className="space-y-2 w-full">
-            <Button variant="default" className="w-full gap-2 bg-primary hover:bg-primary/90">
-              <Mail className="w-4 h-4" />
-              <span>Email Me</span>
+            <Button variant="default" className="w-full gap-2 bg-primary hover:bg-primary/90" asChild>
+              <a href="mailto:sagarsagukr123@gmail.com">
+                <Mail className="w-4 h-4" />
+                <span>Email Me</span>
+              </a>
             </Button>
-            <Button variant="default" className="w-full gap-2 bg-primary hover:bg-primary/90">
-              <Calendar className="w-4 h-4" />
-              <span>Schedule a Call</span>
+            <Button variant="default" className="w-full gap-2 bg-primary hover:bg-primary/90" asChild>
+              <a href="https://drive.google.com/file/d/1fbbgVux43B32qjOXMwjByk3szR_ECAOn/view" target="_blank" rel="noopener noreferrer">
+                <Download className="w-4 h-4" />
+                <span>Download Resume</span>
+              </a>
             </Button>
           </div>
         </Card>
