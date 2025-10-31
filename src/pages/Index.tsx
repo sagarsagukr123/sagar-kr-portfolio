@@ -90,10 +90,6 @@ const Index = () => {
               <span className="text-xs font-medium">Cybersecurity</span>
             </div>
             <div className="bg-secondary rounded-lg p-2 flex items-center justify-center gap-1">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" className="w-4 h-4" alt="Kubernetes" />
-              <span className="text-xs font-medium">Kubernetes</span>
-            </div>
-            <div className="bg-secondary rounded-lg p-2 flex items-center justify-center gap-1">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" className="w-4 h-4" alt="DBMS" />
               <span className="text-xs font-medium">DBMS</span>
             </div>
@@ -437,7 +433,7 @@ const Index = () => {
                   <a href="https://github.com/sagarsagukr123/Mern-Authentication-Project" target="_blank" rel="noopener noreferrer" className="text-xs text-primary hover:underline">
                     View Code
                   </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="text-xs px-3 py-1 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors">
+                  <a href="https://mern-authentication-project-7tr0.onrender.com" target="_blank" rel="noopener noreferrer" className="text-xs px-3 py-1 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors">
                     Live Demo
                   </a>
                 </div>
