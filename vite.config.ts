@@ -17,6 +17,14 @@ export default defineConfig(({ mode }) => ({
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
+    allowedHosts: [
+      'sagar-kr-portfolio.onrender.com',
+      'localhost',
+      '127.0.0.1',
+      '::1',
+      '0.0.0.0',
+      '::'
+    ]
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
